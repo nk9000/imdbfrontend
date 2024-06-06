@@ -1,0 +1,126 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+  background-color: black;  
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  
+}
+.navbar{
+  text-align: center;
+  font-size: 2rem;
+  background-color: yellow;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  height: fit-content;
+
+}
+
+.ui{
+  /* position: absolute; */
+  font-family: 'Courier New', Courier, monospace;
+  /* margin-top: 3rem; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border-radius: 2rem;
+  height: fit-content;
+  width: 85%;
+  top: 50%; left: 50%; position: relative; transform: translate(-50%  , -50%);
+}
+.uileft{
+  width: 40%;
+  /* background-color: green; */
+  align-items: center;
+  justify-content: center ;
+  text-align: center;
+  display: flex;
+  color: yellow;
+  flex-direction: column;
+  
+  /* background-color: red; */
+  
+}
+
+.uiright{
+  width: 55%;
+  color: white;
+  align-items: center;
+  justify-content: center ;
+  text-align: center;
+  /* background-color: red; */
+  /* padding-top: 2rem; */
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonui{
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  margin-top: -10rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.details-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: yellow;
+}
+
+.details-image {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 20px;
+  border: 1.5px solid grey;
+  border-radius: 1.5rem;
+}
+
+.details-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.details-rating,
+.details-date {
+  font-size: 1rem;
+  color: yellow;
+}
+
+.details-description {
+  max-width: 600px;
+  text-align: left;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ffff00;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
